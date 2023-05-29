@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "framework": null,
+    "functions": {
+        "api/index.php": { "runtime": "vercel-php@0.5.3" }
+    },
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "/api/index.php"
+    }],
+    "env": {
+        "APP_ENV": "dev",
+        "APP_DEBUG": "e57950675d67b8deaf455113dd82152e",
+        "DATABASE_URL": "postgresql://app:!ChangeMe!@127.0.0.1:5432/app?serverVersion=15&charset=utf8",
+        "MESSENGER_TRANSPORT_DSN": "doctrine://default?auto_setup=0"
+    }
+}
